@@ -1,0 +1,163 @@
+extends layout 
+
+block content
+ body#page-top
+    // Navigation
+    nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+      .container
+        a.navbar-brand.js-scroll-trigger(href='#page-top') Indonesian Intelligence
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto.my-2.my-lg-0
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#about') About
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#name') Indonesian Names
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#weather') Weather
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#contact') Contact
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='/panjatpinang') Game
+    // Masthead
+    header.masthead
+      .container.h-100
+        .row.h-100.align-items-center.justify-content-center.text-center
+          .col-lg-10.align-self-end
+            h1.text-uppercase.text-white.font-weight-bold We are here to help you learn more about Indonesia!
+            hr.divider.my-4
+          .col-lg-8.align-self-baseline
+            p.text-white-75.font-weight-light.mb-5
+              | Jump on our fun activities and learn!
+            a.btn.btn-primary.btn-xl.js-scroll-trigger(href='#about') Find Out More
+    // About
+    section#about.page-section.bg-primary
+      .container
+        .row.justify-content-center
+          .col-lg-8.text-center
+            h2.text-white.mt-0 About Us!
+            hr.divider.light.my-4
+            p.text-white-50.mb-4 
+              |   Indonesian Intelligence is a website that helps people get to know the culture of Indonesia.
+              |   We consider each person to be unique and cater to their specific needs by providing personalized solutions.
+              |   The website aims to inspire and support first generation born Indonesian Australians through their journey of knowing their parent's culture.
+            a.btn.btn-light.btn-xl.js-scroll-trigger(href='#name') Let's Get Started!
+    // Names
+    section#name.page-section
+      .container
+        .row.h-100.align-items-center.justify-content-center.text-center
+          .col-lg-10.align-self-end
+            h2.text-center.mt-0 Guess the gender!
+          .col-lg-8.align-self-baseline
+            p.text-muted-75.font-weight-light.mb-5
+              | You might find these names unique.
+              | Do you think this person is a boy or a girl?
+            p.text-muted-75.font-weight-light.mb-5
+              | If you guess it wrong, it will be shown with red.
+              | If you guess it right, it will be shown with green!
+        #game.justify-center.flex-column
+          #hud
+            #hud-item
+              h1#questionCorrect.hud-main-text
+          h2#question Do you think this is a boy's name or girl's name?
+          .choice-container
+            p.choice-prefix A
+            p.choice-text(data-number='1') Boy
+          .choice-container
+            p.choice-prefix B
+            p.choice-text(data-number='2') Girl
+
+
+        
+    // Weather
+    #weather
+    section.page-section.bg-dark.text-white
+      .container.text-center
+        h2.mb-4 A Tropical Country
+        hr.divider.my-4
+        p.text-light.mb-5
+          | Indonesia doesn't have winter, spring, summer or autumn.
+          | It's a tropical country so it only has either rainy season or dry season. 
+          | Switch to one of slides to see the most common weather for specific month.
+          | This is based on Denpasar, one of the most visited cities in Indonesia.
+        p.text-light.mb-5
+          a(href="/weather") Click to view the real-time weather!
+        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#carouselIndicators', data-slide-to='0')
+            li(data-target='#carouselIndicators', data-slide-to='1')
+            li(data-target='#carouselIndicators', data-slide-to='2')
+            li(data-target='#carouselIndicators', data-slide-to='3')
+            li(data-target='#carouselIndicators', data-slide-to='4')
+            li(data-target='#carouselIndicators', data-slide-to='5')
+            li(data-target='#carouselIndicators', data-slide-to='6')
+            li(data-target='#carouselIndicators', data-slide-to='7')
+            li(data-target='#carouselIndicators', data-slide-to='8')
+            li(data-target='#carouselIndicators', data-slide-to='9')
+            li(data-target='#carouselIndicators', data-slide-to='10')
+            li(data-target='#carouselIndicators', data-slide-to='11')
+          .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src='/images/1.png', alt='January')
+            .carousel-item
+              img.d-block.w-100(src='/images/2.png' alt='February')
+            .carousel-item
+              img.d-block.w-100(src='/images/3.png' alt='March')
+            .carousel-item
+              img.d-block.w-100(src='/images/4.png' alt='April')
+            .carousel-item
+              img.d-block.w-100(src='/images/5.png' alt='May')
+            .carousel-item
+              img.d-block.w-100(src='/images/6.png' alt='June')
+            .carousel-item
+              img.d-block.w-100(src='/images/7.png' alt='July')
+            .carousel-item
+              img.d-block.w-100(src='/images/8.png' alt='August')
+            .carousel-item
+              img.d-block.w-100(src='/images/9.png' alt='September')
+            .carousel-item
+              img.d-block.w-100(src='/images/10.png' alt='October')
+            .carousel-item
+              img.d-block.w-100(src='/images/11.png' alt='November')
+            .carousel-item
+              img.d-block.w-100(src='/images/12.png' alt='December')
+          a.carousel-control-prev(href='#carouselIndicators', role='button', data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#carouselIndicators', role='button', data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+
+
+    // Contact
+    section#contact.page-section
+      .container
+        .row.justify-content-center
+          .col-lg-8.text-center
+            h2.mt-0 Let's Get In Touch!
+            hr.divider.my-4
+            p.text-muted.mb-5
+              | Ready to know more about Indonesia? Give us a call or send us an email and we will get back to you as soon as possible!
+        .row
+          .col-lg-4.ml-auto.text-center.mb-5.mb-lg-0
+            i.fas.fa-phone.fa-3x.mb-3.text-muted
+            div +61 (04) xxxx xxxx
+          .col-lg-4.mr-auto.text-center
+            i.fas.fa-envelope.fa-3x.mb-3.text-muted
+            // E-mail address
+            a.d-block(href='mailto:monashgoat@gmail.com') monash.goat@gmail.com
+    // Footer
+    footer.bg-light.py-5
+      .container
+        .small.text-center.text-muted Copyright © 2020 - Monash Goat
+    // Bootstrap core JS
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+    // Third party plugin JS
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js')
+    // Core theme JS
+    script(src='js/scripts.js')
+    // Quiz JS
+    script(src="js/quiz.js")
