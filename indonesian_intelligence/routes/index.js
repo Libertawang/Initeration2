@@ -11,9 +11,9 @@ router.get('/weather', function(req, res, next) {
   res.render('weather', { title: 'Weather' });
 });
 
-/* GET test page. */
-router.get('/test', function(req, res, next) {
-  res.render('test', { title: 'test' });
+/* GET second weather page. */
+router.get('/weather2', function(req, res, next) {
+  res.render('weather2', { title: 'Weather Two' });
 });
 
 /* GET game page. */
