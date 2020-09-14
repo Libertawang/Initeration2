@@ -11,6 +11,11 @@ router.get('/weather', function(req, res, next) {
   res.render('weather', { title: 'Weather' });
 });
 
+/* GET test page. */
+router.get('/test', function(req, res, next) {
+  res.render('test', { title: 'test' });
+});
+
 /* GET game page. */
 router.get('/panjatpinang', function(req, res, next) {
   res.render('panjat_pinang', { title: 'Panjat Pinang' });

@@ -1,0 +1,1150 @@
+doctype html
+head
+  meta(charset='utf-8')
+  script(data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer='').
+    var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=false;__ez.queue=(function(){var count=0,incr=0,items=[],timeDelayFired=false,hpItems=[],lpItems=[],allowLoad=true;var obj={func:function(name,funcName,parameters,isBlock,blockedBy,deleteWhenComplete,proceedIfError){var self=this;this.name=name;this.funcName=funcName;this.parameters=parameters===null?null:(parameters instanceof Array)?parameters:[parameters];this.isBlock=isBlock;this.blockedBy=blockedBy;this.deleteWhenComplete=deleteWhenComplete;this.isError=false;this.isComplete=false;this.isInitialized=false;this.proceedIfError=proceedIfError;this.isTimeDelay=false;this.process=function(){log("... func = "+name);self.isInitialized=true;self.isComplete=true;log("... func.apply: "+name);var funcs=self.funcName.split('.');var func=null;if(funcs.length>3){}else if(funcs.length===3){func=window[funcs[0]][funcs[1]][funcs[2]];}else if(funcs.length===2){func=window[funcs[0]][funcs[1]];}else{func=window[self.funcName];}
+    if(typeof func!=='undefined'&&func!==null){func.apply(null,this.parameters);}
+    if(self.deleteWhenComplete===true)delete items[name];if(self.isBlock===true){log("----- F'D: "+self.name);processAll();}}},file:function(name,path,isBlock,blockedBy,async,defer,proceedIfError){var self=this;this.name=name;this.path=path;this.async=async;this.defer=defer;this.isBlock=isBlock;this.blockedBy=blockedBy;this.isInitialized=false;this.isError=false;this.isComplete=false;this.proceedIfError=proceedIfError;this.isTimeDelay=false;this.process=function(){self.isInitialized=true;log("... file = "+name);var scr=document.createElement('script');scr.src=path;if(async===true)scr.async=true;else if(defer===true)scr.defer=true;scr.onerror=function(){log("----- ERR'D: "+self.name);self.isError=true;if(self.isBlock===true){processAll();}};scr.onreadystatechange=scr.onload=function(){var state=scr.readyState;log("----- F'D: "+self.name);if((!state||/loaded|complete/.test(state))){self.isComplete=true;if(self.isBlock===true){processAll();}}};document.getElementsByTagName('head')[0].appendChild(scr);}}};function init(){window.addEventListener("load",function(){setTimeout(function(){timeDelayFired=true;log('TDELAY -----');processAll();},5000);},false);}
+    function addFile(name,path,isBlock,blockedBy,async,defer,proceedIfError,priority){var item=new obj.file(name,path,isBlock,blockedBy,async,defer,proceedIfError);if(priority===true){hpItems[name]=item}else{lpItems[name]=item}
+    items[name]=item;checkIfBlocked(item);}
+    function setallowLoad(settobool){allowLoad=settobool}
+    function addFunc(name,func,parameters,isBlock,blockedBy,autoInc,deleteWhenComplete,proceedIfError,priority){if(autoInc===true)name=name+"_"+incr++;var item=new obj.func(name,func,parameters,isBlock,blockedBy,deleteWhenComplete,proceedIfError);if(priority===true){hpItems[name]=item}else{lpItems[name]=item}
+    items[name]=item;checkIfBlocked(item);}
+    function addTimeDelayFile(name,path){var item=new obj.file(name,path,false,[],false,false,true);item.isTimeDelay=true;log(name+' ... '+' FILE! TDELAY');lpItems[name]=item;items[name]=item;checkIfBlocked(item);}
+    function addTimeDelayFunc(name,func,parameters){var item=new obj.func(name,func,parameters,false,[],true,true);item.isTimeDelay=true;log(name+' ... '+' FUNCTION! TDELAY');lpItems[name]=item;items[name]=item;checkIfBlocked(item);}
+    function checkIfBlocked(item){if(isBlocked(item)===true||allowLoad==false)return;item.process();}
+    function isBlocked(item){if(item.isTimeDelay===true&&timeDelayFired===false){log(item.name+" blocked = TIME DELAY!");return true;}
+    if(item.blockedBy instanceof Array){for(var i=0;i<item.blockedBy.length;i++){var block=item.blockedBy[i];if(items.hasOwnProperty(block)===false){log(item.name+" blocked = "+block);return true;}else if(item.proceedIfError===true&&items[block].isError===true){return false;}else if(items[block].isComplete===false){log(item.name+" blocked = "+block);return true;}}}
+    return false;}
+    function log(msg){var href=window.location.href;var reg=new RegExp('[?&]ezq=([^&#]*)','i');var string=reg.exec(href);var res=string?string[1]:null;if(res==="1")console.debug(msg);}
+    function processAll(){count++;if(count>200)return;log("let's go");processItems(hpItems);processItems(lpItems);}
+    function processItems(list){for(var i in list){if(list.hasOwnProperty(i)===false)continue;var item=list[i];if(item.isComplete===true||isBlocked(item)||item.isInitialized===true||item.isError===true){if(item.isError===true){log(item.name+': error')}else if(item.isComplete===true){log(item.name+': complete already')}else if(item.isInitialized===true){log(item.name+': initialized already')}}else{item.process();}}}
+    init();return{addFile:addFile,addDelayFile:addTimeDelayFile,addFunc:addFunc,addDelayFunc:addTimeDelayFunc,items:items,processAll:processAll,setallowLoad:setallowLoad};})();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.queue.addFile('/detroitchicago/boise.js', '/detroitchicago/boise.js?gcb=191-1&cb=1', false, [], true, false, true, false);
+  script#bsaihudashidsadhu(data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer='' type='text/javascript').
+    window.ezogtk="";if(typeof processGoogleToken!=="function"){processGoogleToken=function(a){window.ezogtk=a.newToken;processGoogleToken=undefined;var el=document.getElementById('bsaihudashidsadhu');if(el!==null){el.parentNode.removeChild(document.getElementById('bsaihudashidsadhu'))}
+    var eel=document.getElementById('ezintegrator');if(eel!==null){eel.parentNode.removeChild(document.getElementById('ezintegrator'))}}}
+  script(async='' src='//c.amazon-adsystem.com/aax2/apstag.js')
+  script(data-cfasync='false' type='text/javascript' data-pagespeed-no-defer='').
+    var __ezaps=[{slotID:'div-gpt-ad-weather_forecast_com-box-2-0',slotName:'/1254144/weather_forecast_com-box-2',sizes:[[970,250],[970,90],[728,90]]},{slotID:'div-gpt-ad-weather_forecast_com-medrectangle-2-0',slotName:'/1254144/weather_forecast_com-medrectangle-2',sizes:[[970,90],[728,90]]},{slotID:'div-gpt-ad-weather_forecast_com-banner-2-0',slotName:'/1254144/weather_forecast_com-banner-2',sizes:[[160,600]]},{slotID:'div-gpt-ad-weather_forecast_com-medrectangle-1-0',slotName:'/1254144/weather_forecast_com-medrectangle-1',sizes:[[580,400],[336,280],[300,250]]}];var __ezapid="aa05931b-5308-4ea3-95a2-adf84f4ffde4";!function(a9,a){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}
+    a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};}("apstag",window);apstag.init({pubID:__ezapid,adServer:'googletag',});function ezapsFetchBids(amazonSlots){if(typeof amazonSlots==='undefined'||amazonSlots.length===0){return}
+    apstag.fetchBids({slots:amazonSlots,timeout:2e3},function(bids){function getSlotById(id){if(typeof window.ezslots==='undefined'||window.ezslots==0){return;}
+    for(var i=0;i<window.ezslots.length;i++){var slot=window[ezslots[i]];if(typeof slot==='undefined'){continue;}
+    var slotId=slot.getSlotElementId();if(typeof slotId!=='undefined'&&slotId==id){return slot;}}}
+    function setA9DisplayBids(bids){if(typeof bids==='undefined'||bids.length==0){return;}
+    var keys=apstag.targetingKeys();for(var i=0;i<bids.length;i++){var bid=bids[i];var slot=getSlotById(bid.slotID);for(var k=0;k<keys.length;k++){if(keys[k]in bid){slot.setTargeting(keys[k],bid[keys[k]]);}}}}
+    googletag.cmd.push(function(){setA9DisplayBids(bids);});});}
+    ezapsFetchBids(__ezaps);
+  script#ezintegrator(src='https://adservice.google.com/adsid/integrator.js?domain=www.weather-forecast.com')
+  script(type='text/javascript').
+    var __banger_pmp_deals=function(){var d={17:{"DealId":17,"Floor":160},18:{"DealId":18,"Floor":25},19:{"DealId":19,"Floor":100},20:{"DealId":20,"Floor":300}};return[{"SlotName":"/1254144/weather_forecast_com-medrectangle-2","Deals":[d[17],d[18],d[19],d[20]]},{"SlotName":"/1254144/weather_forecast_com-medrectangle-1","Deals":[d[17],d[18],d[19],d[20]]},{"SlotName":"/1254144/weather_forecast_com-box-2","Deals":[d[17],d[18],d[19],d[20]]},{"SlotName":"/1254144/weather_forecast_com-banner-2","Deals":[d[17],d[18],d[19],d[20]]}]}();
+  script(type='text/javascript').
+    _ebcids=[138231308856,138231308940,138231308949,138231387842,138231421744,138231421759,138231421774,138231421783,138231421789,138231421792,138242067587,138242067590,138242067602,138242067605,138242067608,138242067614,138242229406,138242229415,138242229421,138242229430];
+  script(data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer='' type='text/javascript').
+    ezobv=86;
+  script(data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer='' type='text/javascript').
+    function ez_isclean(data){if(typeof data==='undefined'){data=document.URL;}
+    var re=/(([^<>()[\\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))(@|%2540|%40)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;var isClean=!re.test(data);return isClean;}
+    var ez_queue=new Array();function sort_queue(a,b)
+    {if(a.priority<b.priority)return-1;else if(a.priority==b.priority)return 0;else return 1;}
+    function execute_ez_queue()
+    {ez_queue.sort(sort_queue);for(var i in ez_queue)
+    {if(typeof ez_queue[i].method!="undefined")
+    {try{ez_queue[i].method.call(null);}
+    catch(err){}}}}
+    window.ez_ad_units=new Array();window.ezslots=new Array();window.ezsrqt={};function ez_write_tag(d){if(ez_isclean()&&d instanceof Array){if(typeof ezstandalone!=='undefined'&&typeof ezstandalone.selectedPlaceholders!=='undefined'&&ezstandalone.selectedPlaceholders[d[3]]===true){return "1+1";}
+    ez_ad_units[ez_ad_units.length]=d;var dve="";if(typeof d[5]!='undefined'&&d[5]>0){dve='_'+d[5];}
+    var ezcmd="googletag.cmd.push(function() {var divid = 'div-gpt-ad-"+d[1]+"-"+d[4]+""+dve+"';if(typeof ezlrarn == 'function'){ezlrarn(divid);}googletag.display(divid);var to = 0;if("+d[2]+".getTargeting('ga')[0] == '0'){to = 500;console.log('"+d[2]+" - no google');}if(window.ezDisableInitialLoad==true){setTimeout(function(){googletag.pubads().refresh(["+d[2]+"])},to);}});";return ezcmd;}
+    return "1+1";}
+    function in_array(needle,haystack){var length=haystack.length;for(var i=0;i<length;i++){if(haystack[i]==needle)return true;}
+    return false;}
+    var ezrpos=new Array();var ez_current_interval;var ez_current_load=0;
+  script(data-cfasync='false' type='text/javascript' data-pagespeed-no-defer='' src='/porpoiseant/dall3202c.js?cb=191-1' async='')
+  script(data-ezscrex='false' data-cfasync='false' type='text/javascript' data-pagespeed-no-defer='').
+    var epbjs=epbjs||{};epbjs.que=epbjs.que||[];epbjs.bidderTimeout=2500;epbjs.useAdj=true;epbjs.SS={"aol":10028,"criteo":10050,"districtm":10035,"gumgum":10079,"oftmedia":10081,"pubmatic":10061,"sovrn":10017};epbjs.bidders=['districtm','sovrn','oftmedia','gumgum','aol','criteo','pubmatic'];epbjs.que.push(function(){epbjs.aliasBidder('appnexus', 'districtm');epbjs.aliasBidder('appnexus', 'oftmedia');});epbjs.bidderSettings={districtm: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.850000; var adj2 = adj1 * 1.200000; return adj2; }},sovrn: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 1.000000; var adj2 = adj1 * 1.200000; return adj2; }},oftmedia: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.800000; var adj2 = adj1 * 1.200000; return adj2; }},gumgum: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.900000; var adj2 = adj1 * 1.200000; return adj2; }},aol: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 1.000000; var adj2 = adj1 * 1.200000; return adj2; }},criteo: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 1.000000; var adj2 = adj1 * 1.200000; return adj2; }},pubmatic: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 1.000000; var adj2 = adj1 * 1.200000; return adj2; }},};epbjs.gadj=1.200000;var __enableAnalytics=false;
+    var __sellerid="ce42a4f1b3730cb8a292d7349adc8710";__ez.queue.addFile('/detroitchicago/houston.js', '/detroitchicago/houston.js?gcb=1&cb=16', false, [], true, false, true, false);__ez.queue.addFunc("epbjsRequestAdUnits", "epbjsRequestAdUnits", [[{code: 'div-gpt-ad-weather_forecast_com-box-2-0', mediaTypes: {banner: { sizes:[[970,250],[970,90],[728,90]] }}, bids: [{bidder: 'pubmatic', params:{ publisherId: '156983', adSlot: 'e_top_of_page_970x250' }},{bidder: 'aol',params: { placement: '5020606', network: '10765.1' }},{bidder: 'gumgum', params:{ inSlot: '20900' }},{bidder: 'sovrn', params: { tagid: '593595'}},{bidder: 'criteo', params: { networkId: 7987 }},{bidder: 'oftmedia', params:{ placementId: '19594005', video: {skippable: true, playback_method: ['auto_play_sound_off']}}}] },{code: 'div-gpt-ad-weather_forecast_com-medrectangle-2-0', mediaTypes: {banner: { sizes:[[970,90],[728,90]] }}, bids: [{bidder: 'pubmatic', params:{ publisherId: '156983', adSlot: 'e_bottom_floating_970x90' }},{bidder: 'sovrn', params: { tagid: '593638'}},{bidder: 'gumgum', params:{ inSlot: '20904' }},{bidder: 'aol',params: { placement: '5020647', network: '10765.1' }},{bidder: 'criteo', params: { networkId: 7987 }}] },{code: 'div-gpt-ad-weather_forecast_com-banner-2-0', mediaTypes: {banner: { sizes:[[160,600]] }}, bids: [{bidder: 'pubmatic', params:{ publisherId: '156983', adSlot: 'e_sidebar_floating_1_160x600' }},{bidder: 'sovrn', params: { tagid: '593684'}},{bidder: 'oftmedia', params:{ placementId: '19594057', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'gumgum', params:{ inSlot: '20824' }},{bidder: 'aol',params: { placement: '5020676', network: '10765.1' }}] },{code: 'div-gpt-ad-weather_forecast_com-medrectangle-1-0', mediaTypes: {banner: { sizes:[[300,250],[580,400],[336,280]] }}, bids: [{bidder: 'pubmatic', params:{ publisherId: '156983', adSlot: 'e_bottom_of_page_300x250' }},{bidder: 'oftmedia', params:{ placementId: '19594037', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'criteo', params: { networkId: 7987 }},{bidder: 'aol',params: { placement: '5020642', network: '10765.1' }},{bidder: 'sovrn', params: { tagid: '593623'}},{bidder: 'gumgum', params:{ inSlot: '20837' }}] }]], false, ['/detroitchicago/houston.js'], true, true, true, true);
+  script(type='text/javascript' data-ezscrex='false').
+    var ezorbf = [];
+  script(data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer='' type='text/javascript').
+    window.isEZABL=false;window.ezmadspc=300;window.ezoViewCheck=false;
+  script(data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer='' type='text/javascript').
+    window.ezDisableInitialLoad=false;
+  script(data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer='' type='text/javascript').
+    window.googletag=window.googletag||{};googletag.cmd=googletag.cmd||[];
+  script(data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer='' type='text/javascript').
+    (function(){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';var useSSL='https:'==document.location.protocol;gads.src=(useSSL?'https:':'http:')+
+    '//securepubads.g.doubleclick.net/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();
+  script(data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer='' type='text/javascript').
+    window.ezogetbrkey = function(s){ var k = 'br1';var k2 = 'eb_br';if(window.ezogtk == ""){k='br1u';k2='eb_bru';}else if(window.ezogtk != "NT"){k='br1t';k2='eb_brt';} s.setTargeting('br1', s.getTargeting(k));s.setTargeting('eb_br', s.getTargeting(k2));};googletag.cmd.push(function() {if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslot_0 = googletag.defineSlot('/1254144/weather_forecast_com-box-2',[[970,250],[234,60],[728,90],[300,250],[320,50],[468,60],[200,200],[125,125],[250,250],[320,100],[120,240],[970,90],[180,150],['fluid']],'div-gpt-ad-weather_forecast_com-box-2-0').addService(googletag.pubads()).setTargeting('iid8','700817').setTargeting('t','134').setTargeting('d','173208').setTargeting('t1','134').setTargeting('pvc','1').setTargeting('ap','1114').setTargeting('sap','1114').setTargeting('a','|124|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod1').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','0').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','1').setTargeting('al','1001').setTargeting('compid','0').setTargeting('tap','weather_forecast_com-box-2-700817').setTargeting('eb_br','45a351e981f435b4c20fafca8a5d741c').setTargeting('eba','1').setTargeting('ebss',[10017,10061]).setTargeting('asau','1731986827').setTargeting('bv','0').setTargeting('bvm','2').setTargeting('bvr','8').setTargeting('shp','1').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','600').setTargeting('br2','300').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','75').setTargeting('deal1',[21,22,23,24,25,26]);ezslot_0.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','8543490537').set('adsense_link_color','FF0000').set('adsense_text_color','000000').set('adsense_url_color','FF0000');ezrpos[0]="0";ezslot_3 = googletag.defineSlot('/1254144/weather_forecast_com-medrectangle-1',[[580,400],[320,100],[120,240],[180,150],[125,125],[234,60],[468,60],[300,250],[320,50],[250,250],[200,200],[970,90],[970,250],[728,90],['fluid']],'div-gpt-ad-weather_forecast_com-medrectangle-1-0').addService(googletag.pubads()).setTargeting('iid7','671667').setTargeting('t','134').setTargeting('d','173208').setTargeting('t1','134').setTargeting('pvc','1').setTargeting('ap','1108').setTargeting('sap','1108').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod1').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','3').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','4').setTargeting('al','1004').setTargeting('compid','0').setTargeting('tap','weather_forecast_com-medrectangle-1-671667').setTargeting('eb_br','8b07bae800b215e481d05a271b3e723b').setTargeting('eba','1').setTargeting('ebss',[10017,10061]).setTargeting('asau','1731986827').setTargeting('bv','18').setTargeting('bvm','0').setTargeting('bvr','8').setTargeting('shp','1').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','700').setTargeting('br2','350').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','34').setTargeting('deal1',[21,22,23,24,25,26]);ezslot_3.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','8543490537').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[3]="3";ezslot_2 = googletag.defineSlot('/1254144/weather_forecast_com-banner-2',[[160,600],[120,600],[120,240],[125,125]],'div-gpt-ad-weather_forecast_com-banner-2-0').addService(googletag.pubads()).setTargeting('iid7','697967').setTargeting('t','134').setTargeting('d','173208').setTargeting('t1','134').setTargeting('pvc','1').setTargeting('ap','1133').setTargeting('sap','1133').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod1').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','2').setTargeting('reft','n').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','31').setTargeting('al','1031').setTargeting('compid','0').setTargeting('tap','weather_forecast_com-banner-2-697967').setTargeting('eb_br','45a351e981f435b4c20fafca8a5d741c').setTargeting('eba','1').setTargeting('ebss',[10017,10061]).setTargeting('asau','1731986827').setTargeting('bv','0').setTargeting('bvm','2').setTargeting('bvr','7').setTargeting('shp','2').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','600').setTargeting('br2','280').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','117').setTargeting('deal1',[21,22,23,24,25,26]);ezslot_2.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','8543490537').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[2]="2";ezslot_1 = googletag.defineSlot('/1254144/weather_forecast_com-medrectangle-2',[970,90],'div-gpt-ad-weather_forecast_com-medrectangle-2-0').addService(googletag.pubads()).setTargeting('iid7','691817').setTargeting('t','134').setTargeting('d','173208').setTargeting('t1','134').setTargeting('pvc','1').setTargeting('ap','1100').setTargeting('sap','1100').setTargeting('a','|2|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod1').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','1').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','5').setTargeting('al','1005').setTargeting('compid','0').setTargeting('tap','weather_forecast_com-medrectangle-2-691817').setTargeting('eb_br','eeb0e32289ff31f9ddef18331038e5e9').setTargeting('eba','1').setTargeting('ebss',[10017,10061]).setTargeting('asau','1731986827').setTargeting('bv','2').setTargeting('bvm','0').setTargeting('bvr','6').setTargeting('shp','1').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','900').setTargeting('br2','450').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','33').setTargeting('deal1',[21,22,23,24,25,26]);ezslot_1.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','8543490537').set('adsense_link_color','37a5d7').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[1]="1";}else{window.ezHideLocations=[];ezslot_0 = googletag.defineSlot('/1254144/weather_forecast_com-box-2',[[970,250],[234,60],[728,90],[300,250],[320,50],[468,60],[200,200],[125,125],[250,250],[320,100],[120,240],[970,90],[180,150],['fluid']],'div-gpt-ad-weather_forecast_com-box-2-0').addService(googletag.pubads()).setTargeting('iid8','700817').setTargeting('t','134').setTargeting('d','173208').setTargeting('t1','134').setTargeting('pvc','1').setTargeting('ap','1114').setTargeting('sap','1114').setTargeting('a','|124|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod1').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','0').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','1').setTargeting('al','1001').setTargeting('compid','0').setTargeting('tap','weather_forecast_com-box-2-700817').setTargeting('eb_br','45a351e981f435b4c20fafca8a5d741c').setTargeting('eba','1').setTargeting('ebss',[10017,10061]).setTargeting('asau','1731986827').setTargeting('bv','0').setTargeting('bvm','2').setTargeting('bvr','8').setTargeting('shp','1').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','600').setTargeting('br2','300').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','75').setTargeting('deal1',[21,22,23,24,25,26]);ezslot_0.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','8543490537').set('adsense_link_color','FF0000').set('adsense_text_color','000000').set('adsense_url_color','FF0000');ezrpos[0]="0";ezslot_3 = googletag.defineSlot('/1254144/weather_forecast_com-medrectangle-1',[[580,400],[320,100],[120,240],[180,150],[125,125],[234,60],[468,60],[300,250],[320,50],[250,250],[200,200],[970,90],[970,250],[728,90],['fluid']],'div-gpt-ad-weather_forecast_com-medrectangle-1-0').addService(googletag.pubads()).setTargeting('iid7','671667').setTargeting('t','134').setTargeting('d','173208').setTargeting('t1','134').setTargeting('pvc','1').setTargeting('ap','1108').setTargeting('sap','1108').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod1').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','3').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','4').setTargeting('al','1004').setTargeting('compid','0').setTargeting('tap','weather_forecast_com-medrectangle-1-671667').setTargeting('eb_br','8b07bae800b215e481d05a271b3e723b').setTargeting('eba','1').setTargeting('ebss',[10017,10061]).setTargeting('asau','1731986827').setTargeting('bv','18').setTargeting('bvm','0').setTargeting('bvr','8').setTargeting('shp','1').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','700').setTargeting('br2','350').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','34').setTargeting('deal1',[21,22,23,24,25,26]);ezslot_3.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','8543490537').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[3]="3";window.ezHideLocations.push('div-gpt-ad-weather_forecast_com-banner-2-0');window.ezHideLocations.push('div-gpt-ad-weather_forecast_com-medrectangle-2-0');}googletag.pubads().addEventListener('slotRenderEnded', function(event) { __ez.queue.addFunc("ezbanger", "ezbanger", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('impressionViewable', function(event) { __ez.queue.addFunc("ezvb", "ezvb", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotResponseReceived', function(event) { __ez.queue.addFunc("ezsr", "ezsr", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotRequested', function(e) { window.ezsrqt[e.slot.getSlotElementId()] = Date.now();});googletag.pubads().enableLazyLoad({fetchMarginPercent: 400, renderMarginPercent: 150, mobileScaling: 2.0});googletag.enableServices();});window.ezoll = false;window.ezoadxnc = '1254144';window.ezorefgsl=function(r){Array.isArray(r)||(r=[r]);for(var e=r.length,o=Array(),a=0;a<e;a++){var t=r[a];t.setTargeting("reqt",Date.now()),void 0!==t.DFPSlot?o.push(t.DFPSlot):o.push(t)}googletag.pubads().refresh(o)};var ezoibfh = Array();ezoibfh[0] = 'zero';ezoibfh[1000000] = 'off';ezoibfh[450]='6e85b37de1b1ffc2593baa5d6e4b02fc';
+    ezoibfh[260]='57914c3716312cb7e954090f0717ea25';
+    ezoibfh[80]='dfa60cee6e1053fc0c9e607c8047bd28';
+    ezoibfh[36]='8c5ffefb122f59a66a8b7672d4452af2';
+    ezoibfh[30]='54d0fa6d5f6aabe7623cb24faa42a441';
+    ezoibfh[4]='9c3e4ee8eae7f1433cb2fe69b1326605';
+    ezoibfh[900]='eeb0e32289ff31f9ddef18331038e5e9';
+    ezoibfh[220]='43aa1607a0c08c74b14a9039e7b909b4';
+    ezoibfh[38]='23b5ca1d9de2587e6a4ecfd33d61b709';
+    ezoibfh[16]='e29f69dd468d31a5514dc9b5587ce757';
+    ezoibfh[10]='291d27313eb66c50243129b23df8a579';
+    ezoibfh[800]='dc3573d5dc41abdf97751be02f53537f';
+    ezoibfh[750]='6ac330e431a70c7d8ce9fb95aee95c72';
+    ezoibfh[120]='58ef7bddb438af5e257c4377f32c243a';
+    ezoibfh[22]='1e913e99b80640fd5b86a539e5b97c94';
+    ezoibfh[14]='ad0061a38dd7c6f7bcb692aee88dfda4';
+    ezoibfh[50]='3ba982fc4238dd4197b1d51b345478dc';
+    ezoibfh[6]='33dd523f8e4dda158f0aa99686dda7f2';
+    ezoibfh[44]='a928cf2c3ad36f5e9ed2d90f655c1dc9';
+    ezoibfh[26]='bf9a045b836005b6c23b7b0749249612';
+    ezoibfh[70]='527e52c10635ac8136a4c84094ee49a8';
+    ezoibfh[8]='2e8b8c60843e52e5aaa1e3a52287a2bb';
+    ezoibfh[850]='5297de5240aa45da173a0792747e0d26';
+    ezoibfh[650]='5bac35e1a3b6adc56da706000a645484';
+    ezoibfh[140]='af063c244089b52ec5a0423a258f1f8e';
+    ezoibfh[28]='674294a1b21a1e89fc99c14c9b17be44';
+    ezoibfh[24]='e66c30deca31b19eda212eeca1258584';
+    ezoibfh[20]='7432360301409ae695ba255f16fbcf06';
+    ezoibfh[46]='fe5b0c99ab7ba15f050582be1301303f';
+    ezoibfh[18]='8de355ef1cf56b7da61277050d9957b1';
+    ezoibfh[700]='8b07bae800b215e481d05a271b3e723b';
+    ezoibfh[600]='45a351e981f435b4c20fafca8a5d741c';
+    ezoibfh[160]='3530fcb6bcc13dc3c1712eaef7d92700';
+    ezoibfh[60]='c352ba581bd3ffd8cea608cf2d55f519';
+    ezoibfh[42]='947f1d5169cc7d0f997560e34838fb04';
+    ezoibfh[34]='a7a863b24978e69c4cdbb5a49be70d5e';
+    ezoibfh[32]='d31e71883d00099e275b6c5878eed023';
+    ezoibfh[400]='76163170a8636ae5b88417f095893e08';
+    ezoibfh[280]='c16fac08e79a971524b1c6834f5caad3';
+    ezoibfh[40]='ee685f77592ce296910ee91457d66ba3';
+    ezoibfh[12]='14e8a85d4c42ff1db8790cbef9e33493';
+    ezoibfh[300]='90c3c48d0172916d27c102ea4aa9d49c';
+    ezoibfh[180]='9ae587f95e95c876b7b76fd4c72a3838';
+    ezoibfh[0]='60474211daf1dfd4d90000ea01f56c30';
+    ezoibfh[240]='8de2c8ca79e8623e3cb37120a35ebaa2';
+    ezoibfh[100]='a495ce7dbb4cefcd3e0a722048894f41';
+    ezoibfh[90]='b355e9227b551c119a30a68852723b62';
+    ezoibfh[48]='8fc09e60bfd78aa82afac0405213359a';
+    ezoibfh[2]='b6c98a8bb15764f1c4ee331dcb724178';
+    ezoibfh[550]='26dfa00588543c52511429ade391f561';
+    ezoibfh[500]='5f2b94bb26a5aa9b1a00e66d30cfd5ec';
+    ezoibfh[350]='9e0a1ce5b2455cb9b48d5df4c6bf4053';
+    ezoibfh[200]='86802a923a1f32517e4c5d3b6d550271';
+    var ezaxmns={};var ezaucmns={};ezaxmns["div-gpt-ad-weather_forecast_com-box-2-0"]=0;ezaucmns["div-gpt-ad-weather_forecast_com-box-2-0"]=0;ezaxmns["div-gpt-ad-weather_forecast_com-medrectangle-1-0"]=0;ezaucmns["div-gpt-ad-weather_forecast_com-medrectangle-1-0"]=0;ezaxmns["div-gpt-ad-weather_forecast_com-banner-2-0"]=0;ezaucmns["div-gpt-ad-weather_forecast_com-banner-2-0"]=0;ezaxmns["div-gpt-ad-weather_forecast_com-medrectangle-2-0"]=0;ezaucmns["div-gpt-ad-weather_forecast_com-medrectangle-2-0"]=0;if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslots.push("ezslot_0");ezslots.push("ezslot_3");ezslots.push("ezslot_2");ezslots.push("ezslot_1");}else{ezslots.push("ezslot_0");ezslots.push("ezslot_3");}
+  script(type='text/javascript').
+    (function(){function storageAvailable(type){var storage;try{storage=window[type];var x='__storage_test__';storage.setItem(x,x);storage.removeItem(x);return true;}
+    catch(e){return e instanceof DOMException&&(e.code===22||e.code===1014||e.name==='QuotaExceededError'||e.name==='NS_ERROR_DOM_QUOTA_REACHED')&&(storage&&storage.length!==0);}}
+    function remove_ama_config(){if(storageAvailable('localStorage')){localStorage.removeItem("google_ama_config");}}
+    remove_ama_config()})()
+  script(type='text/javascript').
+    var ezoicTestActive = true
+  script(data-ezscrex='false' type='text/javascript' data-cfasync='false').
+    var _ezaq = {"ad_cache_level":1,"ad_count_adjustment":0,"ad_lazyload_version":4,"ad_location_ids":"1,5,31,4","ad_transform_level":0,"adx_ad_count":4,"bidder_method":1,"bidder_version":5,"city":"Melbourne","country":"AU","days_since_last_visit":0,"display_ad_count":3,"domain_id":173208,"ds_adsize_opt_id":-1,"engaged_time_visit":0,"ezcache_level":1,"forensiq_score":-1,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"iab_category":"","iab_category_0":"379","is_from_recommended_pages":false,"is_return_visitor":true,"is_sitespeed":0,"last_page_load":"1600088510591","last_pageview_id":"398c0177-6e93-428e-7b26-6112e7eed0e7","lt_cache_level":0,"max_ads":3,"metro_code":0,"optimization_version":1,"page_ad_positions":"1100,1108,1114,1133","page_view_count":1,"page_view_id":"3ceab84e-2070-497e-5959-9a1c871e8881","position_selection_id":39,"postal_code":"3000","pv_event_count":0,"response_time_orig":904,"serverid":"54.79.86.169:13140","state":"VIC","sub_page_ad_positions":"1100,1108,1114,1133","t_epoch":1600088556,"template_id":134,"time_on_site_visit":0,"url":"https://www.weather-forecast.com/maps/Indonesia","user_id":0,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":750,"worst_bad_word_level":0};var _ezim_d = {"weather_forecast_com-banner-2":{"adsense_stat_source_id":5,"adx_ad_count":4,"adx_stat_source_id":35,"full_id":"weather_forecast_com-banner-2/2020-09-14/697967","height":"600","position_id":1133,"sub_position_id":1133,"width":"160"},"weather_forecast_com-box-2":{"adsense_stat_source_id":5,"adx_ad_count":4,"adx_stat_source_id":35,"full_id":"weather_forecast_com-box-2/2020-09-14/700817","height":"250","position_id":1114,"sub_position_id":1114,"width":"970"},"weather_forecast_com-medrectangle-1":{"adsense_stat_source_id":5,"adx_ad_count":4,"adx_stat_source_id":35,"full_id":"weather_forecast_com-medrectangle-1/2020-09-14/671667","height":"400","position_id":1108,"sub_position_id":1108,"width":"580"},"weather_forecast_com-medrectangle-2":{"adsense_stat_source_id":5,"adx_ad_count":4,"adx_stat_source_id":35,"full_id":"weather_forecast_com-medrectangle-2/2020-09-14/691817","height":"90","position_id":1100,"sub_position_id":1100,"width":"970"}};var _ezat = {"domain_id":173208,"form_factor_id":1,"framework_id":1,"pageview_date":"2020-09-14","pageview_id":"3ceab84e-2070-497e-5959-9a1c871e8881","template_id":134,"url":"https://www.weather-forecast.com/maps/Indonesia","visit_uuid":"b1b6823c-4d76-4cdb-6737-cac372b7f581"};
+  script(data-ezscrex='false' data-pagespeed-no-defer='' data-cfasync='false' type='text/javascript').
+    __ez.queue.addFile('banger.js', '/porpoiseant/banger.js?cb=191-1&bv=86&v=35&PageSpeed=off', true, [], true, false, false, true);
+  script.
+    __ez.queue.addFile('/detroitchicago/anaheim.js', '/detroitchicago/anaheim.js?gcb=1&cb=1', false, ['/detroitchicago/minneapolis.js'], true, false, true, false);
+  script(data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer='').
+    __ez.dot={};__ez.queue.addFile('/detroitchicago/memphis.js', '/detroitchicago/memphis.js?gcb=191-1&cb=1', false, [], true, false, true, false);__ez.queue.addFile('/detroitchicago/minneapolis.js', '/detroitchicago/minneapolis.js?gcb=191-1&cb=1', false, [], true, false, true, false);__ez.vep=(function(){var pixels=[],pxURL="/detroitchicago/grapefruit.gif";function AddPixel(vID,pixelData){if(__ez.dot.isDefined(vID)&&__ez.dot.isValid(pixelData)){pixels.push({type:'video',video_impression_id:vID,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(pixelData)});}}
+    function Fire(){if(typeof document.visibilityState!=='undefined'&&document.visibilityState==="prerender"){return;}
+    if(__ez.dot.isDefined(pixels)&&pixels.length>0){while(pixels.length>0){var j=5;if(j>pixels.length){j=pixels.length;}
+    var pushPixels=pixels.splice(0,j);(new Image()).src=__ez.dot.getURL(pxURL)+"?orig="+(__ez.template.isOrig===true?1:0)+"&v="+btoa(JSON.stringify(pushPixels));}}
+    pixels=[];}
+    return{Add:AddPixel,Fire:Fire};})();
+  script(data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer='').
+    __ez.pel=(function(){var pixels=[],pxURL="/porpoiseant/army.gif";function AddAndFirePixel(adSlot,pixelData){AddPixel(adSlot,pixelData,0,0,0,0,0);Fire();}
+    function GetCurrentPixels(){return pixels;}
+    function AddPixel(adSlot,pixelData,revenue,est_revenue,bid_floor_filled,bid_floor_prev,stat_source_id){if(!__ez.dot.isDefined(adSlot)||__ez.dot.isAnyDefined(adSlot.getSlotElementId,adSlot.ElementId)==false){return;}
+    var ad_position_id=parseInt(__ez.dot.getTargeting(adSlot,'ap'));var impId=__ez.dot.getSlotIID(adSlot),adUnit=__ez.dot.getAdUnit(adSlot);var compId=parseInt(__ez.dot.getTargeting(adSlot,"compid"));var lineItemId=0;var creativeId=0;var ezimData=getEzimData(adSlot);if(typeof ezimData=='object'){if(ezimData.creative_id!==undefined){creativeId=ezimData.creative_id;}
+    if(ezimData.line_item_id!==undefined){lineItemId=ezimData.line_item_id;}}
+    if(__ez.dot.isDefined(impId,adUnit)&&__ez.dot.isValid(pixelData)){pixels.push({type:"impression",impression_id:impId,domain_id:__ez.dot.getDID(),unit:adUnit,t_epoch:__ez.dot.getEpoch(0),revenue:revenue,est_revenue:est_revenue,ad_position:ad_position_id,ad_size:"",bid_floor_filled:bid_floor_filled,bid_floor_prev:bid_floor_prev,stat_source_id:stat_source_id,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:compId,line_item_id:lineItemId,creative_id:creativeId,data:__ez.dot.dataToStr(pixelData)});}}
+    function AddPixelById(impFullId,pixelData){var vals=impFullId.split('/');if(__ez.dot.isDefined(impFullId)&&vals.length===3&&__ez.dot.isValid(pixelData)){var adUnit=vals[0],impId=vals[2];pixels.push({type:"impression",impression_id:impId,domain_id:__ez.dot.getDID(),unit:adUnit,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(pixelData)});}}
+    function Fire(){if(typeof document.visibilityState!=='undefined'&&document.visibilityState==="prerender")return;if(__ez.dot.isDefined(pixels)&&pixels.length>0){while(pixels.length>0){var j=5;if(j>pixels.length){j=pixels.length;}
+    var pushPixels=pixels.splice(0,j);var pixelURL=__ez.dot.getURL(pxURL)+"?orig="+(__ez.template.isOrig===true?1:0)+"&sts="+btoa(JSON.stringify(pushPixels));if(typeof window.isAmp!=='undefined'&&isAmp&&typeof window._ezaq!=='undefined'&&_ezaq.hasOwnProperty("domain_id")){pixelURL+="&visit_uuid="+_ezaq['visit_uuid'];}
+    (new Image()).src=pixelURL;}}
+    pixels=[];}
+    function getEzimData(adSlot){if(typeof _ezim_d=="undefined"){return false}
+    var adUnitName=__ez.dot.getAdUnitPath(adSlot).split('/').pop();if(typeof _ezim_d==='object'&&_ezim_d.hasOwnProperty(adUnitName)){return _ezim_d[adUnitName];}
+    for(var ezimKey in _ezim_d){if(ezimKey.split('/').pop()===adUnitName){return _ezim_d[ezimKey];}}
+    return false;}
+    return{Add:AddPixel,AddAndFire:AddAndFirePixel,AddById:AddPixelById,Fire:Fire,GetPixels:GetCurrentPixels,};})();__ez.queue.addFile('/detroitchicago/raleigh.js', '/detroitchicago/raleigh.js?gcb=191-1&cb=1', false, [], true, false, true, false);__ez.queue.addFile('/detroitchicago/tampa.js', '/detroitchicago/tampa.js?gcb=191-1&cb=1', false, [], true, false, true, false);
+  script(data-ezscrex='false' data-pagespeed-no-defer='' data-cfasync='false' type='text/javascript').
+    __ez.queue.addFile('rochester.js', '/detroitchicago/rochester.js?cb=191-1&v=9', false, [], true, false, true, true);
+  meta(content='width=device-width' name='viewport')
+  title Indonesia Weather Map
+  meta(name='description' content='Animated Indonesia weather map showing 10 day forecast and current weather conditions. Overlay rain, snow, cloud, wind and temperature, city locations and webcams')
+  meta(content='460425463983282' property='fb:app_id')
+  link(href='https://www.weather-forecast.com/assets/application-2f57279b2f843d228abfbac1ddda1250.css' media='all' rel='stylesheet' type='text/css')
+  link(href='https://www.weather-forecast.com/assets/print-5f8bae1e55f6a9a3ba59ab5d00c1c128.css' media='print' rel='stylesheet' type='text/css')
+  script.
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KMND7ZB');
+  script(src='https://www.weather-forecast.com/assets/vendor/modernizr-7b1a54ed8ea52430183b841d219f4140.js' type='text/javascript')
+  link(href='/favicon.ico' rel='shortcut icon')
+  link(rel='alternate' hreflang='de' href='https://de.weather-forecast.com/maps/Indonesia')
+  link(rel='alternate' hreflang='en' href='https://www.weather-forecast.com/maps/Indonesia')
+  link(rel='alternate' hreflang='es' href='https://es.weather-forecast.com/maps/Indonesia')
+  link(rel='alternate' hreflang='fr' href='https://fr.weather-forecast.com/maps/Indonesia')
+  link(rel='alternate' hreflang='ja' href='https://ja.weather-forecast.com/maps/Indonesia')
+  link(rel='alternate' hreflang='nl' href='https://nl.weather-forecast.com/maps/Indonesia')
+  link(rel='alternate' hreflang='zh' href='https://zh.weather-forecast.com/maps/Indonesia')
+  script(data-pagespeed-no-defer='').
+    Array.from||(Array.from=function(){var r=Object.prototype.toString,n=function(n){return"function"==typeof n||"[object Function]"===r.call(n)},t=Math.pow(2,53)-1,e=function(r){var n=function(r){var n=Number(r);return isNaN(n)?0:0!==n&&isFinite(n)?(n>0?1:-1)*Math.floor(Math.abs(n)):n}(r);return Math.min(Math.max(n,0),t)};return function(r){var t=Object(r);if(null==r)throw new TypeError("Array.from requires an array-like object - not null or undefined");var o,a=arguments.length>1?arguments[1]:void 0;if(void 0!==a){if(!n(a))throw new TypeError("Array.from: when provided, the second argument must be a function");arguments.length>2&&(o=arguments[2])}for(var i,u=e(t.length),f=n(this)?Object(new this(u)):new Array(u),c=0;c<u;)i=t[c],f[c]=a?void 0===o?a(i,c):a.call(o,i,c):i,c+=1;return f.length=u,f}}());
+    var uj_funcs = [];
+    (function() {
+    window.FCLAYOUT = {};
+    var fclayout = (window.FCLAYOUT || (window.FCLAYOUT = {}));
+    if (window.matchMedia) {
+    fclayout.small = !window.matchMedia('(min-width: 640px)').matches;
+    fclayout.portrait = window.matchMedia("(orientation: portrait)").matches;
+    } else {
+    fclayout.small = (window.innerWidth <= 640);
+    }
+    }).call(this);
+  script(type='text/javascript').
+    (function() {
+    var fclayout = (window.FCLAYOUT || (window.FCLAYOUT = {}));
+    if (window.matchMedia) {
+    fclayout.largeUp = window.matchMedia('(min-width: 1024px)').matches;
+    fclayout.xLargeUp = window.matchMedia('(min-width: 1310px)').matches;
+    }
+    }).call(this);
+  script(type='text/javascript' data-pagespeed-no-defer='').
+    var FCMAPS = (window.FCMAPS || (window.FCMAPS = {}));
+    FCMAPS.anim_frames = 50;
+    FCMAPS.hr_step = 6;
+  // Begin comScore Tag
+  script.
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "28221962" });
+    (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+    })();
+  // End comScore Tag
+  script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-226744-12', 'auto');  // Replace with your property ID.
+    ga('require', 'displayfeatures');
+    var customDimensionEzoic = '1';
+    ga('set', 'dimension1', customDimensionEzoic);
+    ga('send', 'pageview');
+    document.addEventListener("ForecastExpanded", function() {
+    ga('send', 'event', 'forecast', 'expanded');
+    });
+
+    .adtester-container-134,.adtester-container-102,.adtester-container-121,.adtester-container-132,.adtester-container-128,.adtester-container-148,.adtester-container-131,.adtester-container-147,.adtester-container-124,.adtester-container-113,.adtester-container-111,.adtester-container-130,.adtester-container-143,.adtester-container-141,.adtester-container-136,.adtester-container-146,.adtester-container-125,.adtester-container-127,.adtester-container-107,.adtester-container-144,.adtester-container-112,.adtester-container-142,.adtester-container-109,.adtester-container-137,.adtester-container-135,.adtester-container-116,.adtester-container-103,.adtester-container-117,.adtester-container-118,.adtester-container-126,.adtester-container-140,.adtester-container-105,.adtester-container-145,.adtester-container-138{display:none!important}
+    .ezmob-footer {
+    position: fixed; left: 0px; bottom: 0px; width: 100%; background: white; z-index: 100000;
+    }
+    .ezmob-footer-desktop {
+    background-color:rgba(255, 255, 255, 0.8);
+    border-top:1px solid lightgray;
+    padding-top:5px;
+    }
+    .ezmob-footer-close {
+    cursor: pointer;
+    color: #b2b2b2;
+    border: 1px solid #b2b2b2;
+    border-radius: 20px;
+    background: #fff;
+    line-height: 20px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: arial,sans-serif;
+    padding: 0 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 24px;
+    width: 21px;
+    }
+    body {
+    padding-bottom: 100px;
+    height: auto;
+    }
+    .ezmob-footer-close-mobile {
+    display:none;
+    }
+  link(rel='canonical' href='https://www.weather-forecast.com/maps/Indonesia')
+  script(data-ezscrex='false' data-cfasync='false' type='text/javascript').
+    window.google_analytics_uacct = "UA-147515467-38";
+  script(data-ezscrex='false' data-cfasync='false' type='text/javascript').
+    var _gaq = _gaq || [];
+    _gaq.push(['e._setAccount', 'UA-147515467-38']);
+    _gaq.push(['f._setAccount', 'UA-38339005-1']);
+    _gaq.push(['e._setDomainName', 'weather-forecast.com']);
+    _gaq.push(['f._setDomainName', 'weather-forecast.com']);
+    _gaq.push(['e._setCustomVar',1,'template','pub_site',3]);
+    _gaq.push(['e._setCustomVar',2,'t','134',3]);
+    _gaq.push(['e._setCustomVar',3,'rid','0',2]);
+    _gaq.push(['e._setCustomVar',4,'bra','mod1',3]);
+    _gaq.push(['e._setAllowAnchor',true]);
+    _gaq.push(['e._setSiteSpeedSampleRate', 10]);
+    _gaq.push(['f._setCustomVar',1,'template','pub_site',3]);
+    _gaq.push(['f._setCustomVar',2,'domain','weather-forecast.com',3]);
+    _gaq.push(['f._setSiteSpeedSampleRate', 20]);
+    _gaq.push(['e._trackPageview']);
+    _gaq.push(['f._trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  script(type='text/javascript').
+    var ezouid = "1";
+  base(href='https://www.weather-forecast.com/maps/Indonesia')
+  script(type='text/javascript').
+    var ezoTemplate = 'pub_site';
+    if(typeof ezouid == 'undefined')
+    {
+    var ezouid = 'none';
+    }
+    var ezoFormfactor = '1';
+    var ezo_elements_to_check = Array();
+  // START EZHEAD
+  script(data-ezscrex='false' type='text/javascript').
+    var soc_app_id = '0';
+    var did = 173208;
+    var ezdomain = 'weather-forecast.com';
+    var ezoicSearchable = 1;
+  // {jquery}
+  // END EZHEAD
+  script(data-ezscrex='false' data-pagespeed-no-defer='' data-cfasync='false' type='text/javascript' style='display:none').
+    __ez.queue.addFile('__ezf_ezosuigeneris', '//g.ezoic.net/ezosuigeneris.js', true, [], true, false, false, false);
+    var __ez_ezosuigenerisEvt = function() { if(typeof(ezosuigeneris) != 'undefined'){__ez.bit.AddAndFire(_ezaq['page_view_id'], [(new __ezDotData('universal_user_id', ezosuigeneris))]); }};
+    __ez.queue.addFunc('__ez_ezosuigenerisEvt', '__ez_ezosuigenerisEvt', null, false, ['__ezf_ezosuigeneris','/detroitchicago/minneapolis.js','/detroitchicago/memphis.js'], false, false, false, false);
+  script(data-ezscrex='false' data-pagespeed-no-defer='' data-cfasync='false' type='text/javascript' style='display:none').
+    __ez.queue.addFile('__ezf_ezosuigenerisc', '//g.ezoic.net/ezosuigenerisc.js?nogen=1', true, ["/detroitchicago/boise.js"], true, false, false, false);
+  script(async='' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' type='text/javascript')
+  script(type='text/javascript').
+    (function(){
+    var div = document.createElement('div');
+    div.id = 'dmo1';
+    div.style = 'display:none';
+    var s = document.createElement('script');
+    var code = `var googleAdClient = "ca-pub-6396844742497208";
+    window.google_ad_client = googleAdClient;
+    /* dmo */
+    window.google_ad_slot = "dmo";
+    window.google_ad_width = 88;
+    window.google_ad_height = 31;
+    (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: googleAdClient,
+    enable_page_level_ads: false
+    });`;
+    var ss = document.createElement('script');
+    ss.src = '//pagead2.googlesyndication.com/pagead/show_ads.js';
+    ss.type = 'text/javascript';
+    ss.async = false;
+    try {
+    s.appendChild(document.createTextNode(code));
+    } catch (e) {
+    s.text = code;
+    }
+    div.appendChild(s);
+    div.appendChild(ss);
+    if (document.readyState == 'interactive' || document.readyState == 'complete') {
+    document.body.appendChild(div);
+    } else {
+    document.addEventListener("DOMContentLoaded", function(event) {
+    document.body.appendChild(div);
+    });
+    }
+    }());
+  script(data-ezscrex='false' data-pagespeed-no-defer='' data-cfasync='false').
+    function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_173208=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+    }
+    function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+    create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+    window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+    if(window.onload) {
+    var curronload = window.onload;
+    var newonload = function(evt) {
+    curronload(evt);
+    create_ezolpl(pvID, rv);
+    };
+    window.onload = newonload;
+    } else {
+    window.onload = create_ezolpl.bind(null, pvID, rv);
+    }
+    }
+    }
+    __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["3ceab84e-2070-497e-5959-9a1c871e8881", "true"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+// Begin comScore Tag
+noscript
+  img(src='https://sb.scorecardresearch.com/p?c1=2&c2=28221962&cv=2.0&cj=1' alt='')
+// End comScore Tag
+noscript
+
+div(style='clear:both;')
+.contain-to-grid.cont-for-menu.sticky
+  nav.top-bar(data-topbar='' role='navigation')
+    ul.title-area
+      li.toggle-topbar.menu-icon
+        a(href='#')
+          span
+      li.show-for-small
+        form#menu-search-box(action='/locations/catch' method='post')
+          input#search-in-menu.search-small.search-in-menu(autocomplete='off' name='query' placeholder='ENTER A CITY OR COUNTRY:')
+          input#search-in-menu-loc-id(name='loc_id' type='hidden')
+    
+#upper-content
+  #flash
+
+.custom-row
+  .sidebar.show-for-large-up
+    #midsidebar
+      #innersidebar.not_in_print
+        .photos-in-sidebar.upper
+        div(style='clear: both; height: 8px;')
+
+
+        div(style='clear: both; height: 8px;')
+        article#sticky-ads.sticky-ads
+          // Ezoic - sidebar_floating_1 - sidebar_floating_1
+          span#ezoic-pub-ad-placeholder-133
+ 
+  .content
+ 
+    // placeholder 127 blocked.  Reason : no sizes
+    .weather-basic-map-page
+      div(style='margin-top: 5px; text-align: center;')
+        #cont_bn_leaderboard_oko
+          script.
+            googletag.cmd.push(function() {
+            var timesBannerRefreshed = 0;
+            var afterViewTimerElapsed = false;
+            var afterRenderTimerElapsed = false;
+            var refresher = function(slot) {
+            console.log("Refreshing cont_bn_leaderboard_oko");
+            timesBannerRefreshed++;
+            afterRenderTimerElapsed = false;
+            afterViewTimerElapsed = false;
+            googletag.cmd.push(function() {
+            googletag.pubads().refresh([slot]);
+            });
+            }
+            var checkRefreshVisible = function(slot, element) {
+            if (isBnInViewport(element))
+            refresher(slot);
+            else {
+            // console.log("Unit " + element.id + " out of the viewport, waiting");
+            setTimeout(checkRefreshVisible.bind(null, slot, element), 1000);
+            }
+            }
+            var checkRefresh = function(slot) {
+            if (afterRenderTimerElapsed && afterViewTimerElapsed) {
+            console.log("Unit cont_bn_leaderboard_oko ready for refresh");
+            if (timesBannerRefreshed >= 4) {
+            console.log("Reached the refresh limit for cont_bn_leaderboard_oko");
+            } else {
+            checkRefreshVisible(slot, document.getElementById(slot.getSlotElementId()));
+            }
+            }
+            }
+            var afterRenderTimer = function(slot) {
+            console.log(slot.getSlotElementId() + " after-render elapsed");
+            afterRenderTimerElapsed = true;
+            checkRefresh(slot);
+            }
+            var afterViewTimer = function(slot) {
+            console.log(slot.getSlotElementId() + ' viewed and after-view timer elapsed');
+            afterViewTimerElapsed = true;
+            checkRefresh(slot);
+            }
+            googletag.pubads().addEventListener('impressionViewable', function(event) {
+            if (event.slot.getSlotElementId() === 'cont_bn_leaderboard_oko') {
+            setTimeout(afterViewTimer.bind(null, event.slot), 2000);
+            }
+            });
+            googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+            if (event.slot.getSlotElementId() === 'cont_bn_leaderboard_oko') {
+            if (event.isEmpty) {
+            console.log('Empty result for cont_bn_leaderboard_oko');
+            } else {
+            console.log('Render ended for cont_bn_leaderboard_oko');
+            setTimeout(afterRenderTimer.bind(null, event.slot), 30000);
+            }
+            }
+            });
+            googletag.display('cont_bn_leaderboard_oko');
+            });
+
+      h1.newtitle.narrow Indonesia Weather Map
+      p.plaintext.hide-for-small-only
+        | The Indonesia Weather Map below shows the weather forecast for the next 10 days. Control the animation using the slide bar found beneath the weather map.
+      .basic
+        form#map_form(method='post' style='margin: 0px;')
+          #maptab(border='0' cellpadding='0' cellspacing='0')
+            .map-visual-cont
+              .symbols_name_div
+              .name_div
+              #scrollBox
+                #mapcontainer.rtn
+                  .zoom-control
+                    a.plus(href='' onclick="$('.also-see-detailed').show(); return false;") +
+                    a.minus.inactive.zoom(href='') -
+                  .also-see-detailed
+                    a.cross(href='' onclick="$('.also-see-detailed').hide(); return false;") &#x2716;
+                    h3 Please pick from the following detailed weather maps:
+                    table
+                      tbody
+                        tr
+                          td
+                            a.zoom(href='/topographic-maps/banten') Banten
+                          td
+                            a.zoom(href='/topographic-maps/jawa-tengah') Provinsi Jawa Tengah
+                          td
+                            a.zoom(href='/topographic-maps/papua') Provinsi Papua
+                        tr
+                          td
+                            a.zoom(href='/topographic-maps/yogyakarta') Daerah Istimewa Yogyakarta
+                          td
+                            a.zoom(href='/topographic-maps/kalimantan-barat') Provinsi Kalimantan Barat
+                          td
+                            a.zoom(href='/topographic-maps/irian-jaya-barat') Provinsi Papua Barat
+                        tr
+                          td
+                            a.zoom(href='/topographic-maps/jakarta-raya') Daerah Khusus Ibukota Jakarta
+                          td
+                            a.zoom(href='/topographic-maps/kalimantan-selatan') Provinsi Kalimantan Selatan
+                          td
+                            a.zoom(href='/topographic-maps/riau') Provinsi Riau
+                        tr
+                          td
+                            a.zoom(href='/topographic-maps/jawa-barat') Jawa Barat
+                          td
+                            a.zoom(href='/topographic-maps/kalimantan-tengah') Provinsi Kalimantan Tengah
+                          td
+                            a.zoom(href='/topographic-maps/sulawesi-barat') Provinsi Sulawesi Barat
+                        tr
+                          td
+                            a.zoom(href='/topographic-maps/jawa-timur') Jawa Timur
+                          td
+                            a.zoom(href='/topographic-maps/kalimantan-timur') Provinsi Kalimantan Timur
+                          td
+                            a.zoom(href='/topographic-maps/sulawesi-selatan') Provinsi Sulawesi Selatan
+                        tr
+                          td
+                            a.zoom(href='/topographic-maps/bangka-belitung') Kepulauan Bangka Belitung
+                          td
+                            a.zoom(href='/topographic-maps/kepulauan-riau') Provinsi Kepulauan Riau
+                          td
+                            a.zoom(href='/topographic-maps/sumatera-barat') Provinsi Sumatera Barat
+                        tr
+                          td
+                            a.zoom(href='/topographic-maps/aceh') Nanggroe Aceh Darussalam Province
+                          td
+                            a.zoom(href='/topographic-maps/lampung') Provinsi Lampung
+                          td
+                            a.zoom(href='/topographic-maps/sulawesi-tengah') Sulawesi Tengah
+                        tr
+                          td
+                            a.zoom(href='/topographic-maps/bengkulu') Propinsi Bengkulu
+                          td
+                            a.zoom(href='/topographic-maps/maluku') Provinsi Maluku
+                          td
+                            a.zoom(href='/topographic-maps/sulawesi-tenggara') Sulawesi Tenggara
+                        tr
+                          td
+                            a.zoom(href='/topographic-maps/bali') Provinsi Bali
+                          td
+                            a.zoom(href='/topographic-maps/maluku-utara') Provinsi Maluku Utara
+                          td
+                            a.zoom(href='/topographic-maps/sulawesi-utara') Sulawesi Utara
+                        tr
+                          td
+                            a.zoom(href='/topographic-maps/gorontalo') Provinsi Gorontalo
+                          td
+                            a.zoom(href='/topographic-maps/nusa-tenggara-barat') Provinsi Nusa Tenggara Barat
+                          td
+                            a.zoom(href='/topographic-maps/sumatera-selatan') Sumatera Selatan
+                        tr
+                          td
+                            a.zoom(href='/topographic-maps/jambi') Provinsi Jambi
+                          td
+                            a.zoom(href='/topographic-maps/nusa-tenggara-timur') Provinsi Nusa Tenggara Timur
+                          td
+                            a.zoom(href='/topographic-maps/sumatera-utara') Sumatera Utara
+                  .play-control
+                    .frame-back.inactive
+                      .bar
+                      .triangle.triangle-left
+                    .frame-forward
+                      .triangle.triangle-right
+                      .bar
+                    div(style='clear: both;')
+                  img#mapimg(alt='' src='/images/blank.gif')
+                  table#loaderContainer.map-table-like-container.not_in_print(onclick='return false;')
+                    tbody
+                      tr
+                        td.map-table-cell-middle
+                          table#progressTable.map-table-like-container(style='border-spacing: 2px;')
+                            tbody
+                              tr
+                                td(colspan='28' style='font-size:16px;font-weight:bold;') Preloading...
+                              tr
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                                td.progressBlank
+                          table#loaderTable.map-table-like-container(style='border-spacing: 2px;')
+                            tbody
+                              tr
+                                td.map-table-cell-middle(style='font-size:16px;font-weight:bold;') Loading...
+                  div(style='position: absolute; left:0px; top:0px;')
+                    img(alt='' border='0' src='/images/blank.gif' style='position: absolute; left:0px; top:0px; z-index:1;')
+                  .img_over_cont(style='position: absolute; left:0px; top:0px; right: 0; bottom: 0;')
+                    img#img_over(alt='' border='0' src='/images/blank.gif' style='position: absolute; left:0px; top:0px; z-index:1; visibility:hidden;')
+                  #crossU
+                  #crossD
+                  #crossL
+                  #crossR
+              img#scale(alt='' galleryimg='no' name='scale' src='/images/blank.gif')
+              .overlay_name_div
+              #anim_control.ctr
+                .range-slider(data-options='start: 0; end: 49;' data-slider='')
+                  span.range-slider-handle(role='slider' tabindex='0')
+                  span.range-slider-active-segment
+                  input(type='hidden')
+                .anim-btn-cont
+                  input#anim_btn(onclick='FCMAPS.animate();' type='button' value='Play')
+                  input#anim_stop_btn(disabled='disabled' onclick='FCMAPS.stopAnimation();' type='button' value='Stop')
+                  select#interval_select(name='select2' onchange='FCMAPS.changeMapInterval(this.value);')
+                    option(selected='selected' value='6') Monday 14 Sep 7am
+                    option(value='12') Monday 14 Sep 1pm
+                    option(value='18') Monday 14 Sep 7pm
+                    option(value='24') Tuesday 15 Sep 1am
+                    option(value='30') Tuesday 15 Sep 7am
+                    option(value='36') Tuesday 15 Sep 1pm
+                    option(value='42') Tuesday 15 Sep 7pm
+                    option(value='48') Wednesday 16 Sep 1am
+                    option(value='54') Wednesday 16 Sep 7am
+                    option(value='60') Wednesday 16 Sep 1pm
+                    option(value='66') Wednesday 16 Sep 7pm
+                    option(value='72') Thursday 17 Sep 1am
+                    option(value='78') Thursday 17 Sep 7am
+                    option(value='84') Thursday 17 Sep 1pm
+                    option(value='90') Thursday 17 Sep 7pm
+                    option(value='96') Friday 18 Sep 1am
+                    option(value='102') Friday 18 Sep 7am
+                    option(value='108') Friday 18 Sep 1pm
+                    option(value='114') Friday 18 Sep 7pm
+                    option(value='120') Saturday 19 Sep 1am
+                    option(value='126') Saturday 19 Sep 7am
+                    option(value='132') Saturday 19 Sep 1pm
+                    option(value='138') Saturday 19 Sep 7pm
+                    option(value='144') Sunday 20 Sep 1am
+                    option(value='150') Sunday 20 Sep 7am
+                    option(value='156') Sunday 20 Sep 1pm
+                    option(value='162') Sunday 20 Sep 7pm
+                    option(value='168') Monday 21 Sep 1am
+                    option(value='174') Monday 21 Sep 7am
+                    option(value='180') Monday 21 Sep 1pm
+                    option(value='186') Monday 21 Sep 7pm
+                    option(value='192') Tuesday 22 Sep 1am
+                    option(value='198') Tuesday 22 Sep 7am
+                    option(value='204') Tuesday 22 Sep 1pm
+                    option(value='210') Tuesday 22 Sep 7pm
+                    option(value='216') Wednesday 23 Sep 1am
+                    option(value='222') Wednesday 23 Sep 7am
+                    option(value='228') Wednesday 23 Sep 1pm
+                    option(value='234') Wednesday 23 Sep 7pm
+                    option(value='240') Thursday 24 Sep 1am
+                    option(value='246') Thursday 24 Sep 7am
+                    option(value='252') Thursday 24 Sep 1pm
+                    option(value='258') Thursday 24 Sep 7pm
+                    option(value='264') Friday 25 Sep 1am
+                    option(value='270') Friday 25 Sep 7am
+                    option(value='276') Friday 25 Sep 1pm
+                    option(value='282') Friday 25 Sep 7pm
+                    option(value='288') Saturday 26 Sep 1am
+                    option(value='294') Saturday 26 Sep 7am
+                    option(value='300') Saturday 26 Sep 1pm
+              .basic_controls.lower
+                .dyn_thumb_controls
+          .map-controls-cont
+              #controlsDiv
+               
+                .basic_controls
+                  div
+                    
+                .advanced_controls
+                  table.dyn_thumb_controls.advanced(style='width: 173px; border: solid 1px #999; padding-bottom: 5px; margin-top: 10px;')
+                    tbody
+                      tr
+                        td(colspan='2' style='font-size: 12px; color: #999;') Base map
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?type=nav') Colour Basemap
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?type=bw') Greyscale Basemap
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;') &nbsp;
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?type=prec') Precipitation
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?type=wind') Wind
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?type=lapse') Temperature
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?type=cloud') Cloud
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?type=htsgw') Significant Ocean Wave Height
+                  table.dyn_thumb_controls.advanced(style='width: 173px; border: solid 1px #999; padding-bottom: 5px; margin-top: 10px;')
+                    tbody
+                      tr
+                        td(colspan='2' style='font-size: 12px; color: #999;') Transparent overlay
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?over=pressure')
+                            | Pressure:
+                            br
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?over=arrows')
+                            | Wind:
+                            br
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?over=pressure_arrows') Wind+pressure
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?over=fl')
+                            | Freezing
+                            br
+                            | level:
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?over=none')
+                            | None:
+                            br
+                  table.dyn_thumb_controls.advanced(style='width: 173px; border: solid 1px #999; padding-bottom: 5px; margin-top: 10px;')
+                    tbody
+                      tr
+                        td(colspan='2' style='font-size: 12px; color: #999;') Symbols
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=weather') Cities
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=snow') Ski Resorts
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=mountain') Mountain Peaks
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=surf') Surf Breaks
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=tide') Tide Forecasts
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;') &nbsp;
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=places') All snow, city, surf, tide forecasts
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=livetemp') Temperature Observations
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=livewind') Wind Observations
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=cities.forecast.weather') Weather Observations - new
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=cities.forecast.wind') Wind Observations - new
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=cities.forecast.temp') Temperature Observations - new
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=liveweather') Weather Observations
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=livecitycams') Live Webcams
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;') &nbsp;
+                      tr
+                        td(style='padding-left: 10px;')
+                        td.right.mode.link.not_selected(style='width: 119px; padding-left: 5px;')
+                          a(href='/maps/Indonesia?symbols=none') None
+                  p
+                    a(href='#' onclick="$('.advanced_controls').hide(); $('.basic_controls').show(); return false;")
+                      i [Basic mode]
+                ul.units(style='width: 100px; text-align: right;')
+                  li.metric
+                    nobr
+                      input#metricradio(checked='checked' name='units' onclick="javascript: FCMAPS.switchUnits('metric');" type='radio')
+                      label(for='metricradio') &deg;C
+                  li.imperial
+                    nobr
+                      input#imperialradio(name='units' onclick="javascript: FCMAPS.switchUnits('imperial');" type='radio')
+                      label(for='imperialradio') &deg;F
+          div(style='display: none;')
+            .ctr
+              label(for='filtered_resorts') Display specific location*
+              br
+              select#filtered_resorts(name='filtered_resorts' style='width: 173px;')
+                option Select to locate on the map
+        #overDiv(style='position:absolute; visibility:hidden; z-index:1000;')
+        noscript
+          p Please enable JavaScript to access the following map views:
+          p
+            | All map types that you can enable here: Indonesia Colour Basemap, Greyscale Basemap, Precipitation, Indonesia Wind, Temperature, Cloud, Indonesia Significant Ocean Wave Height.
+          p
+            | Map overlays available for display: Indonesia Pressure, Wind, Wind+pressure, Indonesia Freezing level.
+          p
+            | Symbols shown on the map: Indonesia Cities, Ski Resorts, Mountain Peaks, Indonesia Surf Breaks, Tide Forecasts, All snow, city, surf, tide forecasts, Indonesia Temperature Observations, Wind Observations, Weather Observations - new, Indonesia Wind Observations - new, Temperature Observations - new, Weather Observations, Indonesia Live Webcams.
+ 
+      // placeholder 130 blocked.  Reason : no sizes
+      
+
+
+
+script(src='https://www.weather-forecast.com/assets/application-8d24bfb4ea5f089fc6aedba7cc319ede.js' type='text/javascript')
+#cont_bn_mob_footer_sticky_horiz1
+  script(type='text/javascript').
+    googletag.cmd.push(function() {
+    var placeholderDisplayed = false;
+    var timesBannerRefreshed = 0;
+    var afterViewTimerElapsed = false;
+    var afterRenderTimerElapsed = false;
+    var bannerClosedByUser = false;
+    var refresher = function(slot) {
+    console.log("Refreshing cont_bn_mob_footer_sticky_horiz1");
+    timesBannerRefreshed++;
+    afterRenderTimerElapsed = false;
+    afterViewTimerElapsed = false;
+    googletag.cmd.push(function() {
+    googletag.pubads().refresh([slot]);
+    });
+    }
+    var checkRefresh = function(slot) {
+    if (afterRenderTimerElapsed && afterViewTimerElapsed) {
+    console.log("Unit cont_bn_mob_footer_sticky_horiz1 ready for refresh");
+    if (timesBannerRefreshed >= 4) {
+    console.log("Reached the refresh limit for cont_bn_mob_footer_sticky_horiz1");
+    } else if (bannerClosedByUser) {
+    console.log("Closed");
+    } else {
+    refresher(slot);
+    }
+    }
+    }
+    var afterRenderTimer = function(slot) {
+    console.log(slot.getSlotElementId() + " after-render elapsed");
+    afterRenderTimerElapsed = true;
+    checkRefresh(slot);
+    }
+    var afterViewTimer = function(slot) {
+    console.log(slot.getSlotElementId() + ' viewed and after-view timer elapsed');
+    afterViewTimerElapsed = true;
+    checkRefresh(slot);
+    }
+    googletag.pubads().addEventListener('impressionViewable', function(event) {
+    if (event.slot.getSlotElementId() === 'cont_bn_mob_footer_sticky_horiz1') {
+    setTimeout(afterViewTimer.bind(null, event.slot), 2000);
+    }
+    });
+    googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+    if (event.slot.getSlotElementId() === 'cont_bn_mob_footer_sticky_horiz1') {
+    if (event.isEmpty) {
+    console.log('Empty result for cont_bn_mob_footer_sticky_horiz1');
+    } else {
+    console.log('Render ended for cont_bn_mob_footer_sticky_horiz1');
+    if (!placeholderDisplayed) {
+    var a = document.getElementById('cont_bn_mob_footer_sticky_horiz1');
+    a.style.backgroundColor = "rgba(237, 237, 237, 0.82)",
+    a.style.position = "fixed",
+    a.style.bottom = "0px",
+    a.style.padding = "4px 0 0 0",
+    a.style.zIndex = "9999",
+    a.style.width = "100%",
+    a.style.textAlign = "center",
+    a.style.transform = "translate(-50%, 0%)",
+    a.style.left = "50%",
+    a.style.display = "";
+    var i = document.createElement("img");
+    i.id = "close-button",
+    i.src = "data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzQuMjM5IDE3NC4yMzkiPjxnIGZpbGw9IiM2YjZiNmIiPjxwYXRoIGQ9Ik04Ny4xMiAwQzM5LjA4MiAwIDAgMzkuMDgyIDAgODcuMTJzMzkuMDgyIDg3LjEyIDg3LjEyIDg3LjEyIDg3LjEyLTM5LjA4MiA4Ny4xMi04Ny4xMlMxMzUuMTU3IDAgODcuMTIgMHptMCAxNTkuMzA1Yy0zOS44MDIgMC03Mi4xODUtMzIuMzgzLTcyLjE4NS03Mi4xODVTNDcuMzE4IDE0LjkzNSA4Ny4xMiAxNC45MzVzNzIuMTg1IDMyLjM4MyA3Mi4xODUgNzIuMTg1LTMyLjM4NCA3Mi4xODUtNzIuMTg1IDcyLjE4NXoiLz48cGF0aCBkPSJNMTIwLjgzIDUzLjQxNGMtMi45MTctMi45MTctNy42NDctMi45MTctMTAuNTU5IDBMODcuMTIgNzYuNTY4IDYzLjk2OSA1My40MTRjLTIuOTE3LTIuOTE3LTcuNjQyLTIuOTE3LTEwLjU1OSAwcy0yLjkxNyA3LjY0MiAwIDEwLjU1OWwyMy4xNTEgMjMuMTUzLTIzLjE1MiAyMy4xNTRhNy40NjQgNy40NjQgMCAwIDAgMCAxMC41NTkgNy40NDUgNy40NDUgMCAwIDAgNS4yOCAyLjE4OCA3LjQzNyA3LjQzNyAwIDAgMCA1LjI4LTIuMTg4TDg3LjEyIDk3LjY4NmwyMy4xNTEgMjMuMTUzYTcuNDQ1IDcuNDQ1IDAgMCAwIDUuMjggMi4xODggNy40NDIgNy40NDIgMCAwIDAgNS4yOC0yLjE4OCA3LjQ2NCA3LjQ2NCAwIDAgMCAwLTEwLjU1OUw5Ny42NzkgODcuMTI3bDIzLjE1MS0yMy4xNTNhNy40NjUgNy40NjUgMCAwIDAgMC0xMC41NnoiLz48L2c+PC9zdmc+",
+    i.style.position = "absolute",
+    i.style.top = "-12px",
+    i.style.right = "3px",
+    i.style.width = "24px",
+    i.style.height = "24px",
+    i.onclick = function() {
+    a.style.display = "none"
+    bannerClosedByUser = true;
+    },
+    a.appendChild(i);
+    placeholderDisplayed = true;
+    }
+    setTimeout(afterRenderTimer.bind(null, event.slot), 30000);
+    }
+    }
+    });
+    googletag.display('cont_bn_mob_footer_sticky_horiz1');
+    });
+
+script(type='text/javascript').
+  $(".zoom-control a.zoom, .also-see-detailed a.zoom").click(function() {
+  if (this.href) {
+  window.location.href=FCMAPS.mapPathPreservingMode(this.href);
+  }
+  return false;
+  });
+script(type='text/javascript').
+  $(".play-control .frame-back").click(function() {
+  FCMAPS.advanceByFrames(-1);
+  });
+  $(".play-control .frame-forward").click(function() {
+  FCMAPS.advanceByFrames(1);
+  });
+script(type='text/javascript').
+  window.fcmaps_cmd = window.fcmaps_cmd || [];
+  fcmaps_cmd.push(function() {
+  FCMAPS.slider = $('#anim_control .range-slider')[0];
+  $(FCMAPS.slider).foundation('slider', 'set_value', 0);
+  });
+script(src='https://assets.weather-forecast.com/maps/dynamic/Indonesia.title.js' type='text/javascript')
+script(type='text/javascript').
+  window.fcmaps_cmd = window.fcmaps_cmd || [];
+  fcmaps_cmd.push(function() {
+  window.params = {};
+  window.filename = "Indonesia";
+  window.main_filename = "Indonesia";
+  window.guests_code=".cc23";
+  window.members_code="";
+  window.map_hosts=['https://assets.weather-forecast.com'];
+  window.static_map_hosts=['https://assets.weather-forecast.com'];
+  window.symbol_path = "/maps/dynamic/";
+  window.map_path = "/maps/dynamic/";
+  window.default_type_for_anim = "prec";
+  window.max_guest_hours = 300;
+  window.last_hr = 300;
+  window.units = 'metric';
+  window.noClick = false;
+  $(document).ready(function () {
+  $(".basic_controls .dyn_thumb_controls .mode a").click(function() {
+  // var a_element = $("a", $(this).parents("td")[0])[0];
+  FCMAPS.setMapModeFromUrl(this.href);
+  if (history && history.replaceState) {
+  history.replaceState(null, "", this.href);
+  }
+  $(".dyn_thumb_controls .selected").removeClass("selected").addClass("not_selected");
+  var currentCont = $(".not_selected", $(this).parentsUntil(".btncontblock, .dyn_thumb_controls", "tr"))[0];
+  $(currentCont).addClass("selected").removeClass("not_selected");
+  $(this).parents("li.not_selected").addClass("selected").removeClass("not_selected");
+  return false;
+  });
+  $(".advanced_controls .dyn_thumb_controls .mode a").click(function() {
+  FCMAPS.setMapModeFromUrl(this.href, false);
+  var controls_group = $(this).parents(".dyn_thumb_controls");
+  controls_group.find(".selected").removeClass("selected").addClass("not_selected");
+  $($(".not_selected", $(this).parents("tr"))[0]).addClass("selected").removeClass("not_selected");
+  return false;
+  });
+  window.params.map_mode = {"default":{"type":"nav","over":"pressure","symbols":"cities.forecast.weather","hr":"6"},"current":{"type":"nav","over":"pressure","symbols":"cities.forecast.weather","hr":"6"}};
+  window.params.basic = true;
+  FCMAPS.detailed = false;
+  FCMAPS.scale = 1;
+  FCMAPS.width = 600;
+  FCMAPS.height = 474;
+  FCMAPS.thumb_filename = "Indonesia";
+  FCMAPS.titles_for_symbols = {
+  "cities.forecast.weather": "Weather Forecast",
+  "cities.forecast.wind": "Wind Forecast",
+  "cities.forecast.temp": "Temperature Forecast",
+  "snow.forecast.weather.top": "Weather Forecast (Top Lift at Resorts)",
+  "snow.forecast.weather.mid": "Weather Forecast (Mid Mountain)",
+  "snow.forecast.weather.bot": "Weather Forecast (Bottom Lift at Resorts)",
+  "isgoodpiste": "Resorts with Good Piste Conditions Reported",
+  "ispowder": "Resorts with Powder Reported",
+  "isnewsnow": "Resorts with New Snow Reported",
+  "isnewsnow": "Resorts with New Snow Reported",
+  "summary.upper_depth": "Snow Depths at the Resort Top Lift",
+  "summary.lower_depth": "Snow Depths at the Resort Bottom Lift",
+  "summary.fresh_snow_depth": "Resorts with Fresh Snow Reported",
+  "summary.lastsnowed": "Number of Days Since Last Snow",
+  "livecams": "Resort Webcams",
+  "isfullyopen": "Resorts that are Fully Open",
+  "runstoresort": "Runs to Resort Open",
+  "liveweather": "Weather Now",
+  "livetemp": "Temperature Now",
+  "livewind": "Wind Now",
+  "livecitycams": "City Webcams",
+  "livesurfcams": "Beach Webcams",
+  "liveswell": "Wave Buoys"
+  }
+  FCMAPS.time_descriptions = ['Monday 14 Sep 7am', 'Monday 14 Sep 1pm', 'Monday 14 Sep 7pm', 'Tuesday 15 Sep 1am', 'Tuesday 15 Sep 7am', 'Tuesday 15 Sep 1pm', 'Tuesday 15 Sep 7pm', 'Wednesday 16 Sep 1am', 'Wednesday 16 Sep 7am', 'Wednesday 16 Sep 1pm', 'Wednesday 16 Sep 7pm', 'Thursday 17 Sep 1am', 'Thursday 17 Sep 7am', 'Thursday 17 Sep 1pm', 'Thursday 17 Sep 7pm', 'Friday 18 Sep 1am', 'Friday 18 Sep 7am', 'Friday 18 Sep 1pm', 'Friday 18 Sep 7pm', 'Saturday 19 Sep 1am', 'Saturday 19 Sep 7am', 'Saturday 19 Sep 1pm', 'Saturday 19 Sep 7pm', 'Sunday 20 Sep 1am', 'Sunday 20 Sep 7am', 'Sunday 20 Sep 1pm', 'Sunday 20 Sep 7pm', 'Monday 21 Sep 1am', 'Monday 21 Sep 7am', 'Monday 21 Sep 1pm', 'Monday 21 Sep 7pm', 'Tuesday 22 Sep 1am', 'Tuesday 22 Sep 7am', 'Tuesday 22 Sep 1pm', 'Tuesday 22 Sep 7pm', 'Wednesday 23 Sep 1am', 'Wednesday 23 Sep 7am', 'Wednesday 23 Sep 1pm', 'Wednesday 23 Sep 7pm', 'Thursday 24 Sep 1am', 'Thursday 24 Sep 7am', 'Thursday 24 Sep 1pm', 'Thursday 24 Sep 7pm', 'Friday 25 Sep 1am', 'Friday 25 Sep 7am', 'Friday 25 Sep 1pm', 'Friday 25 Sep 7pm', 'Saturday 26 Sep 1am', 'Saturday 26 Sep 7am', 'Saturday 26 Sep 1pm'];
+  FCMAPS.timezone_descr = 'WIB';
+  FCMAPS.thumbs_to_preload = [ "lapse", "cloud", "weather_pressure", "wind", "prec" ];
+  FCMAPS.initMap1();
+  FCMAPS.initialSwitch();
+  FCMAPS.putCross(160, 279);
+  $('#map-loc-namebox').auto_complete_loc({
+  url: '/maps/Indonesia/ac_location_name?query=__VALUE__',
+  immediate_submit: false,
+  loc_id: 'map_loc_id',
+  default_text: 'Jakarta',
+  use_first_entry: true,
+  callback_on_choice: function(result) {
+  eval("FCMAPS.putCross("+result+")");
+  }
+  });
+  $("input[name='airports']").click(function() {
+  if ($(this).attr('data-class') == 'rtn') {
+  $('#mapcontainer').addClass('rtn');
+  } else {
+  $('#mapcontainer').removeClass('rtn');
+  }
+  FCMAPS.setAirports(this.value);
+  });
+  });
+  $('#map-loc-namebox').change(function(input) {
+  if (this.value == "") FCMAPS.putCross(160, 279);
+  });
+  });
+script.
+  $(document).ready(function () {
+  var url_str = '/locations/ac_location_name?query=__VALUE__';
+  var default_text_str = 'ENTER A CITY OR COUNTRY:';
+  $('#location').auto_complete_loc({url: url_str, default_text: default_text_str, loc_id: 'location_loc_id', prevent_empty_submit: true});
+  });
+script(type='text/javascript').
+  if (typeof init_uj == "function") {
+  init_uj();
+  }
+// Generated 2020-09-14 13:02:37 UTC
+// Ezoic - Anchor Ad - bottom_floating
+
+    // End Ezoic - Anchor Ad - bottom_floating
+
+// End Ezoic - Anchor Ad - bottom_floating
+script.
+  var __ez_tkn_evnt = function() { if(typeof(_ezaq) != 'undefined'){if(window.ezogtk != "") {__ez.bit.AddAndFire(_ezaq.page_view_id,[new __ezDotData("ext_user_hash",window.ezogtk)]);}}};document.addEventListener("DOMContentLoaded", __ez.queue.addFunc("__ez_tkn_evnt", "__ez_tkn_evnt", event, false, ['/detroitchicago/minneapolis.js','/detroitchicago/memphis.js'], true, true, false, true));
+script(type='text/javascript' style='display:none;' async='').
+  __ez.queue.addFile('anchorfix.js', '/ezoic/anchorfix.js?cb=191-1', false, [], true, true, true, false);
+script(type='text/javascript' data-cfasync='false').
+script(type='text/javascript' style='display:none;').
+  var __ez_dims = (function() {
+  var setCookie = function( name, content, expiry ) {
+  return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+  };
+  var ffid = 1;
+  var oh = window.screen.height;
+  var ow = window.screen.width;
+  var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+  var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+  var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+  var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+  setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+  setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+  })();
+script(type='text/javascript' style='display:none;' async='').
+  __ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=191-1&shcb=34', true, ['/detroitchicago/minneapolis.js'], true, false, false, false);
+  __ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=191-1&shcb=34', false, [], true, false, false, false);
+script.
+  var _audins_dom="weather_forecast_com",_audins_did=173208;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezoic.net/detroitchicago/audins.js?cb=191-1");
+noscript
+  div(style='display:none;')
+    img(src='//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.weather_forecast_com,DomainId.173208' border='0' height='1' width='1' alt='Quantcast')
+noscript
+  img(src='https://sb.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1')
+// ssa-off
+// [selectron:done]
